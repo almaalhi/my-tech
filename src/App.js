@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/navigation/Navbar';
+import NavItem from './components/navigation/NavItem';
+import Home from './components/content/Home';
+import Pint from './components/content/Pint';
+import { HiOutlineHome } from 'react-icons/hi';
+import { HiOutlineChevronDown } from 'react-icons/hi';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar>
+        <NavItem icon={<HiOutlineHome />} linkName='/' />
+        <NavItem icon={<HiOutlineChevronDown />} linkName='Pint' />
+      </Navbar>
+      <Switch>
+        <div className='mainContent'>
+          <Route path='/' exact component={Home} />
+          <Route path='/pint' component={Pint} />
+        </div>
+      </Switch>
+    </Router>
   );
 }
 
