@@ -29,7 +29,6 @@ code {
   line-height: 1.25em;
 }
 
-/* Nav Button */
 ul {
   list-style: none;
   margin: 0;
@@ -83,6 +82,32 @@ a {
 .icon-button svg {
   fill: var(--text-color);
   width: 20px;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: absolute;
+  top: 58px;
+  width: 300px;
+  transform: translateX(-45%);
+  background-color: var(--bg);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.menu-item {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: var(--border-radius);
+  transition: background var(--speed);
+  padding: 0.5rem;
+}
+
+.menu-item:hover {
+  background-color: #525357;
 }
 
 .content {
