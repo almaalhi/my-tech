@@ -10,6 +10,8 @@ import DropdownMenu from './components/navigation/DropdownMenu';
 import DropdownItem from './components/navigation/DropdownItem';
 import Home from './components/content/Home';
 import Pint from './components/content/Pint';
+import Brompton from './components/content/Brompton';
+import TeenageEngineering from './components/content/TeenageEngineering';
 
 function App() {
   const dropdownContext = useContext(DropdownContext);
@@ -28,7 +30,9 @@ function App() {
           }
         >
           <DropdownMenu>
-            <DropdownItem linkName='Pint'>Onewheel Pint</DropdownItem>
+            <DropdownItem linkName='pint'>Onewheel Pint</DropdownItem>
+            <DropdownItem linkName='brompton'>Brompton</DropdownItem>
+            <DropdownItem linkName='opz'>OP-Z</DropdownItem>
           </DropdownMenu>
         </NavItem>
       </Navbar>
@@ -36,6 +40,8 @@ function App() {
         <div className='mainContent'>
           <Route path='/' exact component={Home} />
           <Route path='/pint' component={Pint} />
+          <Route path='/brompton' component={Brompton} />
+          <Route path='/opz' component={TeenageEngineering} />
         </div>
       </Switch>
     </Router>

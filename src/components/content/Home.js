@@ -1,6 +1,6 @@
-import homePic from '../../pictures/D72_9057.png';
-import castle from '../../pictures/D72_5693.png';
-import chichibu from '../../pictures/D72_2436.png';
+import homePic from '../../pictures/home/D72_9057.png';
+import castle from '../../pictures/home/D72_5693.png';
+import chichibu from '../../pictures/home/D72_2436.png';
 
 const pictures = [
   { picture: homePic, text: 'Tokyo' },

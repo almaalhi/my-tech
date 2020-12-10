@@ -1,11 +1,11 @@
-import pintPark from '../../pictures/DSC_0277.png';
-import pintPackage from '../../pictures/D72_2360.JPG';
-import pintAcc from '../../pictures/D72_2400.JPG';
-import pintAccOpen from '../../pictures/D72_2407.JPG';
-import pint1 from '../../pictures/DSC_0364.png';
-import pint2 from '../../pictures/DSC_0565.png';
-import pint3 from '../../pictures/DSC_0576.png';
-import pint4 from '../../pictures/DSC_0728.png';
+import pintPark from '../../pictures/pint/DSC_0277.png';
+import pintPackage from '../../pictures/pint/D72_2360.JPG';
+import pintAcc from '../../pictures/pint/D72_2400.JPG';
+import pintAccOpen from '../../pictures/pint/D72_2407.JPG';
+import pint1 from '../../pictures/pint/DSC_0364.png';
+import pint2 from '../../pictures/pint/DSC_0565.png';
+import pint3 from '../../pictures/pint/DSC_0576.png';
+import pint4 from '../../pictures/pint/DSC_0728.png';
 
 function Pint(props) {
   return (
