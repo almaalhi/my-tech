@@ -6,7 +6,7 @@ function TeenageEngineering(props) {
         <p>Content coming soon...</p>
       </div>
       <div className='imageDiv'>
-        <img></img>
+        {/* <img></img> */}
         <p className='imageDesc'></p>
       </div>
     </div>
