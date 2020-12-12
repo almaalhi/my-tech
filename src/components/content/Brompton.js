@@ -1,7 +1,7 @@
 function Brompton(props) {
   return (
     <div className='content'>
-      <h1>The Best Bike For Me</h1>
+      <h1>My Brompton</h1>
       <div>
         <p>Content coming soon...</p>
       </div>

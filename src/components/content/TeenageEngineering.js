@@ -1,7 +1,7 @@
 function TeenageEngineering(props) {
   return (
     <div className='content'>
-      <h1>Making music with the OP-Z</h1>
+      <h1>My OP-Z</h1>
       <div>
         <p>Content coming soon...</p>
       </div>

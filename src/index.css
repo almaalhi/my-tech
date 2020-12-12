@@ -54,11 +54,21 @@ a {
   justify-content: flex-end;
 }
 
+.navbar-title {
+  display: flex;
+  flex: 115;
+  color: var(--text-color);
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 18px;
+}
+
 .nav-item {
   width: calc(var(--nav-size) * 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 1;
 }
 
 .icon-button {

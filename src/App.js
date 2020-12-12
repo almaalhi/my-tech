@@ -19,6 +19,7 @@ function App() {
   return (
     <Router>
       <Navbar>
+        <h3 className='navbar-title'>ALVARADO.TECH</h3>
         <NavItem icon={<HiOutlineHome />} linkName='/' />
         <NavItem
           icon={
