@@ -12,8 +12,8 @@ function NavItem(props) {
         className='icon-button'
         onClick={
           props.children
-            ? () => dropdownContext.navbarClick()
-            : () => dropdownContext.navbarItemClick()
+            ? () => dropdownContext.toggleOpen()
+            : () => dropdownContext.closeOpen()
         }
       >
         {props.icon}

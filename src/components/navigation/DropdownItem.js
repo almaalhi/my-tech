@@ -9,7 +9,7 @@ function DropdownItem(props) {
     <Link
       to={props.linkName}
       className='menu-item'
-      onClick={() => dropdownContext.navbarItemClick()}
+      onClick={() => dropdownContext.closeOpen()}
     >
       {props.children}
     </Link>

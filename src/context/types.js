@@ -1,2 +1,2 @@
-export const NAV_CLICK = 'NAV_CLICK';
-export const NAV_ITEM_CLICK = 'NAV_ITEM_CLICK';
+export const TOGGLE_OPEN = 'TOGGLE_OPEN';
+export const CLOSE_OPEN = 'CLOSE_OPEN';

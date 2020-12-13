@@ -1,13 +1,13 @@
-import { NAV_CLICK, NAV_ITEM_CLICK } from '../types';
+import { TOGGLE_OPEN, CLOSE_OPEN } from '../types';
 
 export default (state, action) => {
   switch (action.type) {
-    case NAV_CLICK:
+    case TOGGLE_OPEN:
       return {
         ...state,
         open: !state.open,
       };
-    case NAV_ITEM_CLICK:
+    case CLOSE_OPEN:
       return {
         ...state,
         open: false,

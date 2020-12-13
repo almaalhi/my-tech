@@ -1,7 +1,7 @@
 import { useReducer } from 'react';
 import DropdownContext from './dropdownContext';
 import DropdownReducer from './dropdownReducer';
-import { NAV_CLICK, NAV_ITEM_CLICK } from '../types';
+import { TOGGLE_OPEN, CLOSE_OPEN } from '../types';
 
 const DropdownState = (props) => {
   const initialState = {
@@ -11,24 +11,23 @@ const DropdownState = (props) => {
   const [state, dispatch] = useReducer(DropdownReducer, initialState);
 
   // Click Dropdown on Navbar
-  const navbarClick = () =>
+  const toggleOpen = () =>
     dispatch({
-      type: NAV_CLICK,
-      payload: state.open,
+      type: TOGGLE_OPEN,
     });
 
   // Click Item in Navbar
-  const navbarItemClick = () =>
+  const closeOpen = () =>
     dispatch({
-      type: NAV_ITEM_CLICK,
+      type: CLOSE_OPEN,
     });
 
   return (
     <DropdownContext.Provider
       value={{
         open: state.open,
-        navbarClick,
-        navbarItemClick,
+        toggleOpen,
+        closeOpen,
       }}
     >
       {props.children}

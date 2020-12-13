@@ -23,8 +23,8 @@ function Home(props) {
           My name is Alex and I'm currently building this website with React.
           It's just a fun way for me to apply concepts that I'm learning and
           share it with others. I plan to include pages that show some hobbies
-          of mine at first, but will over time create content that visitors can
-          interact with.
+          of mine at first, but will create content that is more interactive
+          over time.
         </p>
       </div>
       <div className='imageDiv'>
