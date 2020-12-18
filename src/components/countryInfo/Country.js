@@ -1,27 +1,23 @@
 import axios from "axios";
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
-const getCountry = () => {
-    axios.get('https://restcountries.eu/rest/v2/name/united')
-    .then((res) => {
-        res.data.forEach((result) => console.log(result.name) )
-       
-    //   res.data.name;
-    })
-    .catch((err) => {
-        console.error(err)
-    })
-}
 
 const Country = (props) => {
-    const [countryList, setCountryList] = useState('');
+    const [text, setText] = useState('');
+    const [countryList, setCountryList] = useState([])
+ 
+    
+    const getCountry = async text => {  
+            const res = await axios.get(`https://restcountries.eu/rest/v2/name/${text}`); 
+            setCountryList(res.data);      
+    }
 
-    useEffect(() => {
-      setCountryList(getCountry());
-      
-    }, [])
-
-    return <div className='content'>{countryList}
+    return <div className='content'>
+      <form>
+        <input type="text" name='text' placeholder='Search Countries' value={text} onChange={e => setText(e.target.value)}/>
+      </form>
+    <button onClick={() => getCountry(text)}>Search</button>
+    <div>{countryList.length > 0 ? countryList.map(country => (<p>{country.name}</p>)) : null}</div>
     </div>;
   }
   
