@@ -12,7 +12,7 @@ import Home from './components/content/Home';
 import Pint from './components/content/Pint';
 import Brompton from './components/content/Brompton';
 import TeenageEngineering from './components/content/TeenageEngineering';
-import Country from './components/countryInfo/Country';
+import Countries from './components/countryInfo/Countries';
 
 function App() {
   const dropdownContext = useContext(DropdownContext);
@@ -45,7 +45,7 @@ function App() {
           <Route path='/pint' component={Pint} />
           <Route path='/brompton' component={Brompton} />
           <Route path='/opz' component={TeenageEngineering} />
-          <Route path='/country' component={Country} />
+          <Route path='/country' component={Countries} />
         </div>
       </Switch>
     </Router>
