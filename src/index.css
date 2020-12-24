@@ -24,7 +24,7 @@ code {
 }
 
 .mainContent {
-  max-width: 1000px;
+  /* max-width: 1000px; */
   font-size: 20px;
   line-height: 1.25em;
 }
@@ -120,6 +120,7 @@ a {
 }
 
 .content {
+  max-width: 800px;
   color: var(--text-color);
   margin: 2vw;
 }
@@ -153,4 +154,73 @@ a {
   .image {
     width: 98%;
   }
+}
+
+.countryName {
+  font-size: larger;
+}
+
+.search {
+  margin: auto;
+  width: 95%;
+}
+
+.flag {
+  width: 36px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.bigFlag {
+  width: 200px;
+  height: auto;
+  margin-right: 10px;
+}
+
+input {
+  margin: 1.2rem 0;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='date'],
+input[type='submit'],
+button,
+select,
+textarea {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 50%;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+}
+
+input[type='submit'],
+button {
+  font: inherit;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.btn-dark {
+  background-color: #242526;
+  color: var(--text-color);
+}
+
+.btn-light {
+  background-color: #919191;
+  color: var(--text-color);
+}
+
+.countryUl {
+  margin: 0 0 25px 0;
+}
+
+.countryUl li {
+  padding: 5px;
 }

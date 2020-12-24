@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import DropdownContext from './context/dropdown/dropdownContext';
+import CountryState from './context/country/CountryState';
 import { HiOutlineHome } from 'react-icons/hi';
 import { HiOutlineChevronDown } from 'react-icons/hi';
 import { HiOutlineChevronUp } from 'react-icons/hi';
@@ -12,43 +13,47 @@ import Home from './components/content/Home';
 import Pint from './components/content/Pint';
 import Brompton from './components/content/Brompton';
 import TeenageEngineering from './components/content/TeenageEngineering';
-import Countries from './components/countryInfo/Countries';
+import CountrySearch from './components/countryInfo/CountrySearch';
 
 function App() {
   const dropdownContext = useContext(DropdownContext);
 
   return (
-    <Router>
-      <Navbar>
-        <h2 className='navbar-title'>ALVARADO.TECH</h2>
-        <NavItem icon={<HiOutlineHome />} linkName='/' />
-        <NavItem
-          icon={
-            dropdownContext.open ? (
-              <HiOutlineChevronDown />
-            ) : (
-              <HiOutlineChevronUp />
-            )
-          }
-        >
-          <DropdownMenu>
-            <DropdownItem linkName='pint'>Onewheel Pint</DropdownItem>
-            <DropdownItem linkName='brompton'>Brompton</DropdownItem>
-            <DropdownItem linkName='opz'>OP-Z</DropdownItem>
-            <DropdownItem linkName='country'>Country Information</DropdownItem>
-          </DropdownMenu>
-        </NavItem>
-      </Navbar>
-      <Switch>
-        <div className='mainContent'>
-          <Route path='/' exact component={Home} />
-          <Route path='/pint' component={Pint} />
-          <Route path='/brompton' component={Brompton} />
-          <Route path='/opz' component={TeenageEngineering} />
-          <Route path='/country' component={Countries} />
-        </div>
-      </Switch>
-    </Router>
+    <CountryState>
+      <Router>
+        <Navbar>
+          <h2 className='navbar-title'>ALVARADO.TECH</h2>
+          <NavItem icon={<HiOutlineHome />} linkName='/' />
+          <NavItem
+            icon={
+              dropdownContext.open ? (
+                <HiOutlineChevronDown />
+              ) : (
+                <HiOutlineChevronUp />
+              )
+            }
+          >
+            <DropdownMenu>
+              <DropdownItem linkName='pint'>Onewheel Pint</DropdownItem>
+              <DropdownItem linkName='brompton'>Brompton</DropdownItem>
+              <DropdownItem linkName='opz'>OP-Z</DropdownItem>
+              <DropdownItem linkName='country'>
+                Country Information App
+              </DropdownItem>
+            </DropdownMenu>
+          </NavItem>
+        </Navbar>
+        <Switch>
+          <div className='mainContent'>
+            <Route path='/' exact component={Home} />
+            <Route path='/pint' component={Pint} />
+            <Route path='/brompton' component={Brompton} />
+            <Route path='/opz' component={TeenageEngineering} />
+            <Route path='/country' component={CountrySearch} />
+          </div>
+        </Switch>
+      </Router>
+    </CountryState>
   );
 }
 

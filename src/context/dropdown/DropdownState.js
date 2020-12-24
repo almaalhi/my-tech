@@ -10,13 +10,13 @@ const DropdownState = (props) => {
 
   const [state, dispatch] = useReducer(DropdownReducer, initialState);
 
-  // Click Dropdown on Navbar
+  // Toggle Dropdown
   const toggleOpen = () =>
     dispatch({
       type: TOGGLE_OPEN,
     });
 
-  // Click Item in Navbar
+  // Close Dropdown
   const closeOpen = () =>
     dispatch({
       type: CLOSE_OPEN,
