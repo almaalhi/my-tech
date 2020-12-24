@@ -15,7 +15,7 @@ const Country = (props) => {
         <li>Population: {country.population}</li>
         <li>Calling Code: +{country.callingCodes[0]}</li>
         <li>
-          Language: {country.languages[0].name} (Native Spelling:{'  '}
+          Languages: {country.languages[0].name} (Native Spelling:{'  '}
           {country.languages[0].nativeName})
         </li>
       </ul>
