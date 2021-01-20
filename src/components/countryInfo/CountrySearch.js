@@ -8,13 +8,7 @@ const CountrySearch = () => {
   const CountryContext = useContext(countryContext);
   const [text, setText] = useState('');
 
-  const {
-    getCountries,
-    countries,
-    clearCountries,
-    country,
-    loading,
-  } = CountryContext;
+  const { getCountries, countries, clearCountries, country } = CountryContext;
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -28,7 +22,9 @@ const CountrySearch = () => {
 
   const onChange = (e) => setText(e.target.value);
 
-  const countryList = countries.map((country) => <Countries info={country} />);
+  const countryList = countries.map((country, ind) => (
+    <Countries info={country} key={ind} />
+  ));
 
   return (
     <div>
@@ -42,14 +38,15 @@ const CountrySearch = () => {
             onChange={onChange}
           />
           <input type='submit' value='Search' className='btn btn-dark' />
+
+          {countries.length > 0 ? (
+            <button onClick={clearCountries} className='btn btn-light'>
+              Clear
+            </button>
+          ) : null}
         </form>
-        {countries.length > 0 ? (
-          <button onClick={clearCountries} className='btn btn-light'>
-            Clear
-          </button>
-        ) : null}
       </div>
-      <div className='content'>
+      <div className='search country-list'>
         {countries.length > 0 && country.length === 0 ? (
           countryList
         ) : country.length !== 0 ? (

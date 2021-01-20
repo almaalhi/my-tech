@@ -1,9 +1,11 @@
 import { useContext } from 'react';
 import DropdownContext from './context/dropdown/dropdownContext';
 import CountryState from './context/country/CountryState';
-import { HiOutlineHome } from 'react-icons/hi';
-import { HiOutlineChevronDown } from 'react-icons/hi';
-import { HiOutlineChevronUp } from 'react-icons/hi';
+import {
+  HiOutlineHome,
+  HiOutlineMenu,
+  HiOutlineMinusCircle,
+} from 'react-icons/hi';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/navigation/Navbar';
 import NavItem from './components/navigation/NavItem';
@@ -22,14 +24,14 @@ function App() {
     <CountryState>
       <Router>
         <Navbar>
-          <h2 className='navbar-title'>ALVARADO.TECH</h2>
+          {/* <h2 className='navbar-title'>ALVARADO.TECH</h2> */}
           <NavItem icon={<HiOutlineHome />} linkName='/' />
           <NavItem
             icon={
               dropdownContext.open ? (
-                <HiOutlineChevronDown />
+                <HiOutlineMinusCircle />
               ) : (
-                <HiOutlineChevronUp />
+                <HiOutlineMenu />
               )
             }
           >
