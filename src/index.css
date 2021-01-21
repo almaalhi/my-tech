@@ -155,14 +155,18 @@ a {
     align-items: center;
     justify-content: center;
   }
+
   .image {
     width: 98%;
   }
+
   .country-item {
     width: 80%;
     margin: auto;
   }
-  .mainContent {
+
+  .mainContent,
+  .country-list {
     width: 80%;
   }
 }
@@ -248,12 +252,11 @@ button {
 }
 
 .country-list {
-  /* padding-left: 4.5rem; */
   display: flex;
   flex-flow: column;
-  align-items: center;
+  align-items: flex-start;
   align-content: center;
-  width: 80%;
+  max-width: 600px;
   margin: auto;
 }
 
