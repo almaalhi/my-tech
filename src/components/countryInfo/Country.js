@@ -12,8 +12,8 @@ const Country = (props) => {
   return (
     <div className='country-item'>
       <h3>{country.name}</h3>
-      <img src={country.flag} alt='flag' className='bigFlag' />
-      <ul className='countryUl'>
+      <img src={country.flag} alt='flag' className='big-flag' />
+      <ul className='country-ul'>
         <li>Capital: {country.capital}</li>
         <li>Population: {popString}</li>
         <li>Calling Code: +{country.callingCodes[0]}</li>

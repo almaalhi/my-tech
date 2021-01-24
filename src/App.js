@@ -16,6 +16,7 @@ import Pint from './components/content/Pint';
 import Brompton from './components/content/Brompton';
 import TeenageEngineering from './components/content/TeenageEngineering';
 import CountrySearch from './components/countryInfo/CountrySearch';
+import Footer from './components/footer/Footer';
 
 function App() {
   const dropdownContext = useContext(DropdownContext);
@@ -24,7 +25,6 @@ function App() {
     <CountryState>
       <Router>
         <Navbar>
-          {/* <h2 className='navbar-title'>ALVARADO.TECH</h2> */}
           <NavItem icon={<HiOutlineHome />} linkName='/' />
           <NavItem
             icon={
@@ -46,7 +46,7 @@ function App() {
           </NavItem>
         </Navbar>
         <Switch>
-          <div className='mainContent'>
+          <div className='main-content-div'>
             <Route path='/' exact component={Home} />
             <Route path='/pint' component={Pint} />
             <Route path='/brompton' component={Brompton} />
@@ -54,6 +54,7 @@ function App() {
             <Route path='/country' component={CountrySearch} />
           </div>
         </Switch>
+        <Footer />
       </Router>
     </CountryState>
   );

@@ -20,20 +20,23 @@ function Home(props) {
       <h1>Welcome!</h1>
       <div>
         <p>
-          My name is Alex and I'm currently building this website with React.
-          It's just a fun way for me to apply concepts that I'm learning and
-          share it with others. I plan to include pages that show some hobbies
-          of mine at first, but will create content that is more interactive
-          over time.
+          Hello, my name is Alex and I'm on my way to becoming a software
+          developer. This website is something that I've started to put the
+          concepts that I've learned to use.{' '}
+        </p>
+        <p>
+          This page uses React and React Router to render content as needed. I'm
+          using the built in Context and Reducer hooks for state management. API
+          calls are being handled with Axios.
         </p>
       </div>
-      <div className='imageDiv'>
+      <div className='image-div'>
         <img
           className='image'
           src={pictures[randomPic].picture}
           alt='Home Pic'
         ></img>
-        <p className='imageDesc'>{pictures[randomPic].text}</p>
+        <p className='image-desc'>{pictures[randomPic].text}</p>
       </div>
     </div>
   );

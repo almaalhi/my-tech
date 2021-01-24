@@ -6,6 +6,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--bg-accent);
+  display: flex;
+  flex-direction: column;
+}
+
+html,
+body {
+  height: 100%;
 }
 
 code {
@@ -21,13 +28,6 @@ code {
   --border: 1px solid #474a4d;
   --border-radius: 8px;
   --speed: 500ms;
-}
-
-.mainContent {
-  /* max-width: 800px; */
-  font-size: 20px;
-  line-height: 1.25em;
-  margin: auto;
 }
 
 ul {
@@ -120,21 +120,30 @@ a {
   background-color: #525357;
 }
 
+.main-content-div {
+  min-height: 600px;
+  height: 100%;
+}
+
 .content {
+  min-height: 800px;
+  font-size: 20px;
+  line-height: 1.25em;
   max-width: 800px;
-  display: flex;
-  flex-flow: column;
+  flex: 1 0 auto;
   align-content: center;
   color: var(--text-color);
   margin: auto;
 }
 
 /* image rendering */
-.imageDiv {
+.image-div {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 600px;
   margin: auto;
+  padding: 10px;
 }
 
 .image {
@@ -144,13 +153,13 @@ a {
   height: auto;
 }
 
-.imageDesc {
+.image-desc {
   display: flex;
   justify-content: center;
 }
 
 @media (max-width: 600px) {
-  .imageDiv {
+  .image-div {
     width: auto;
     align-items: center;
     justify-content: center;
@@ -165,13 +174,13 @@ a {
     margin: auto;
   }
 
-  .mainContent,
+  .content,
   .country-list {
     width: 80%;
   }
 }
 
-.countryName {
+.country-name {
   font-size: larger;
 }
 
@@ -197,7 +206,7 @@ a {
   margin-right: 10px;
 }
 
-.bigFlag {
+.big-flag {
   width: 200px;
   height: auto;
   margin-right: 10px;
@@ -243,11 +252,11 @@ button {
   color: var(--text-color);
 }
 
-.countryUl {
+.country-ul {
   margin: 0 0 25px 0;
 }
 
-.countryUl li {
+.country-ul li {
   padding: 5px;
 }
 
@@ -279,4 +288,19 @@ button {
 
 .search .country-item {
   margin: auto;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--text-color);
+  background-color: var(--bg);
+  height: 30px;
+  margin-top: 2rem;
+}
+
+.fill {
+  min-height: 600px;
 }

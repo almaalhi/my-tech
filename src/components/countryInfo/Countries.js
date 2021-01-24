@@ -5,10 +5,10 @@ const Countries = ({ info }) => {
   const CountryContext = useContext(countryContext);
 
   return (
-    <div className='content country-list-item'>
+    <div className='country-list-item'>
       <div onClick={() => CountryContext.setCountry(info.alpha2Code)}>
         <img src={info.flag} alt='flag' className='flag' />
-        <span className='countryName'>{info.name}</span>
+        <span className='country-name'>{info.name}</span>
       </div>
     </div>
   );
