@@ -1,12 +1,12 @@
 import { Fragment } from 'react';
 import CountrySearch from '../countryInfo/CountrySearch';
-import Countries from '../countryInfo/CountrySearch';
+import CountryResult from '../countryInfo/CountryResult';
 
 function CountryApp(props) {
   return (
     <Fragment>
       <CountrySearch />
-      <Countries />
+      <CountryResult />
     </Fragment>
   );
 }

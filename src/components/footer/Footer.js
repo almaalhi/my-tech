@@ -1,5 +1,5 @@
 const Footer = () => {
-  return <footer className='footer'>2021</footer>;
+  return <footer className='footer'>ALVARADO.TECH</footer>;
 };
 
 export default Footer;

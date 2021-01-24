@@ -58,21 +58,20 @@ function Pint(props) {
         </div>
 
         <p>
-          I've ridden nearly <del>900 miles now as of December 2020</del>{' '}
-          <strong>UPDATE</strong> 1300 miles now as of January 2021, and
-          although I still have an occasional scare, I feel right at home on it.
-          I ride everyday for a few reasons. First, I want to! It's so much fun
-          to "carve" around on the streets and sidewalks. Yes, that word is
-          borrowed from snowboarding but that's the best way to describe the
-          sensation. Second, it lets me get some fresh air since I spend the
-          remainder of the day inside. It's <del>2020</del> 2021 so with WFH
-          still in place and with me trying to avoid unnecessary contact with
-          people, I am likely to stay inside for days on end if it weren't for
-          my Pint. Finally, the app. Future Motion updated the app and now they
-          have badges available. Sort of like achievements in a video game, but
-          you get it with real life events. Daily streaks, riding a certain
-          number of miles in one day, riding a certain number of miles without
-          breaking your streak, and so on.
+          I've ridden nearly <del>900 miles now as of December 2020</del> 1,300
+          miles now as of January 2021, and although I still have an occasional
+          scare, I feel right at home on it. I ride everyday for a few reasons.
+          First, I want to! It's so much fun to "carve" around on the streets
+          and sidewalks. Yes, that word is borrowed from snowboarding but that's
+          the best way to describe the sensation. Second, it lets me get some
+          fresh air since I spend the remainder of the day inside. It's{' '}
+          <del>2020</del> 2021 so with WFH still in place and with me trying to
+          avoid unnecessary contact with people, I am likely to stay inside for
+          days on end if it weren't for my Pint. Finally, the app. Future Motion
+          updated the app and now they have badges available. Sort of like
+          achievements in a video game, but you get it with real life events.
+          Daily streaks, riding a certain number of miles in one day, riding a
+          certain number of miles without breaking your streak, and so on.
         </p>
         <div className='image-div'>
           <img className='image' src={pintPark} alt='pint pic'></img>

@@ -15,7 +15,7 @@ import Home from './components/content/Home';
 import Pint from './components/content/Pint';
 import Brompton from './components/content/Brompton';
 import TeenageEngineering from './components/content/TeenageEngineering';
-import CountrySearch from './components/countryInfo/CountrySearch';
+import CountryApp from './components/content/CountryApp';
 import Footer from './components/footer/Footer';
 
 function App() {
@@ -51,7 +51,7 @@ function App() {
             <Route path='/pint' component={Pint} />
             <Route path='/brompton' component={Brompton} />
             <Route path='/opz' component={TeenageEngineering} />
-            <Route path='/country' component={CountrySearch} />
+            <Route path='/country' component={CountryApp} />
           </div>
         </Switch>
         <Footer />
