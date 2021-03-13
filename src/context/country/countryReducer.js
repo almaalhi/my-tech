@@ -4,9 +4,11 @@ import {
   SET_COUNTRY,
   CLEAR_COUNTRY,
   SET_LOADING,
-} from '../types';
+  SET_ERROR,
+  CLEAR_ERROR,
+} from "../types";
 
-export default (state, action) => {
+const countryReducer = (state, action) => {
   switch (action.type) {
     case GET_COUNTRIES:
       return {
@@ -37,8 +39,22 @@ export default (state, action) => {
         ...state,
         loading: true,
       };
+    case SET_ERROR:
+      return {
+        ...state,
+        error: true,
+        errorMessage: action.payload,
+        loading: false,
+      };
+    case CLEAR_ERROR:
+      return {
+        ...state,
+        error: false,
+      };
 
     default:
-      return state;
+      throw Error(`Unhandled Action: ${action.type}`);
   }
 };
+
+export default countryReducer;

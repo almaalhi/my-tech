@@ -1,6 +1,6 @@
-import { TOGGLE_OPEN, CLOSE_OPEN } from '../types';
+import { TOGGLE_OPEN, CLOSE_OPEN } from "../types";
 
-export default (state, action) => {
+const dropdownReducer = (state, action) => {
   switch (action.type) {
     case TOGGLE_OPEN:
       return {
@@ -16,3 +16,5 @@ export default (state, action) => {
       return state;
   }
 };
+
+export default dropdownReducer;
