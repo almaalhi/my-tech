@@ -249,6 +249,7 @@ button {
   color: var(--text-color);
 }
 
+/* Country App */
 .country-ul {
   margin: 0 0 25px 0;
 }
@@ -270,6 +271,10 @@ button {
   cursor: pointer;
 }
 
+.country-list .country-item:hover {
+  cursor: default;
+}
+
 .country-list-item {
   margin: 15px 0;
 }
@@ -285,6 +290,11 @@ button {
 
 .search .country-item {
   margin: auto;
+}
+
+.alert {
+  margin: auto;
+  color: #fff;
 }
 
 footer {
@@ -303,18 +313,17 @@ footer {
 }
 
 /*  spinner  */
-
 .loader,
 .loader:before,
 .loader:after {
-  background: #242526;
+  background: var(--bg);
   -webkit-animation: load1 1s infinite ease-in-out;
   animation: load1 1s infinite ease-in-out;
   width: 1em;
   height: 4em;
 }
 .loader {
-  color: #242526;
+  color: var(--bg);
   text-indent: -9999em;
   margin: 88px auto;
   position: relative;
