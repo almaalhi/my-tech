@@ -1,4 +1,4 @@
-function Brompton(props) {
+const Brompton = (props) => {
   return (
     <div className='content'>
       <h1>My Brompton</h1>
@@ -11,6 +11,6 @@ function Brompton(props) {
       </div>
     </div>
   );
-}
+};
 
 export default Brompton;

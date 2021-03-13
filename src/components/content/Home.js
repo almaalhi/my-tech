@@ -8,13 +8,13 @@ const pictures = [
   { picture: chichibu, text: 'Chichibu' },
 ];
 
-function getRandomInt(max) {
+const getRandomInt = (max) => {
   return Math.floor(Math.random() * Math.floor(max));
-}
+};
 
 const randomPic = getRandomInt(3);
 
-function Home(props) {
+const Home = (props) => {
   return (
     <div className='content'>
       <h1>Welcome!</h1>
@@ -40,6 +40,6 @@ function Home(props) {
       </div>
     </div>
   );
-}
+};
 
 export default Home;

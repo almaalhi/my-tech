@@ -1,4 +1,4 @@
-function TeenageEngineering(props) {
+const TeenageEngineering = () => {
   return (
     <div className='content'>
       <h1>My OP-Z</h1>
@@ -11,6 +11,6 @@ function TeenageEngineering(props) {
       </div>
     </div>
   );
-}
+};
 
 export default TeenageEngineering;

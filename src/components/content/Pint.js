@@ -7,7 +7,7 @@ import pint2 from '../../pictures/pint/DSC_0565.png';
 import pint3 from '../../pictures/pint/DSC_0576.png';
 import pint4 from '../../pictures/pint/DSC_0728.png';
 
-function Pint(props) {
+const Pint = () => {
   return (
     <div className='content'>
       <h1>My Pint</h1>
@@ -96,6 +96,6 @@ function Pint(props) {
       </div>
     </div>
   );
-}
+};
 
 export default Pint;
