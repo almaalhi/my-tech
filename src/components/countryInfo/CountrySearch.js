@@ -5,12 +5,19 @@ const CountrySearch = () => {
   const CountryContext = useContext(countryContext);
   const [text, setText] = useState("");
 
-  const { getCountries, countries, clearCountries, error } = CountryContext;
+  const {
+    getCountries,
+    countries,
+    clearCountries,
+    error,
+    setError,
+    errorMessage,
+  } = CountryContext;
 
   const onSubmit = (e) => {
     e.preventDefault();
     if (text === "") {
-      console.log("Please Enter Something");
+      setError("Please enter some text and try again");
     } else {
       getCountries(text);
       setText("");
@@ -31,14 +38,12 @@ const CountrySearch = () => {
         />
         <input type="submit" value="Search" className="btn btn-dark" />
 
-        {countries.length > 0 ? (
+        {countries.length > 0 && (
           <button onClick={clearCountries} className="btn btn-light">
             Clear
           </button>
-        ) : null}
-        {error && (
-          <h3 className="alert">No country found, please try again.</h3>
         )}
+        {error && <h3 className="alert">{errorMessage}</h3>}
       </form>
     </div>
   );

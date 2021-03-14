@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import countryContext from "../../context/country/countryContext";
 import Language from "./Language";
+import Timezones from "./Timezones";
 
 const Country = () => {
   const CountryContext = useContext(countryContext);
@@ -18,6 +19,7 @@ const Country = () => {
         <li>Population: {popString}</li>
         <li>Calling Code: +{country.callingCodes[0]}</li>
         <Language languages={country.languages} />
+        <Timezones timezones={country.timezones} />
       </ul>
       <button className="btn btn-dark" onClick={clearCountry}>
         Back

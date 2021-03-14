@@ -35,7 +35,8 @@ const CountryState = (props) => {
         payload: res.data,
       });
     } catch (err) {
-      setError(err);
+      console.error(err.message);
+      setError("No country found, please try again");
     }
   };
 
@@ -56,7 +57,8 @@ const CountryState = (props) => {
         payload: res.data,
       });
     } catch (err) {
-      setError(err);
+      console.error(err.message);
+      setError("There was an error when trying to set the country");
     }
   };
 
@@ -68,10 +70,10 @@ const CountryState = (props) => {
     dispatch({ type: SET_LOADING });
   };
 
-  const setError = (err) => {
+  const setError = (msg) => {
     dispatch({
       type: SET_ERROR,
-      payload: err.message,
+      payload: msg,
     });
     setTimeout(() => {
       dispatch({
@@ -93,6 +95,7 @@ const CountryState = (props) => {
         setCountry,
         clearCountry,
         setLoading,
+        setError,
       }}
     >
       {props.children}
