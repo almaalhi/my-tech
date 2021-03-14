@@ -14,7 +14,7 @@ import TeenageEngineering from "./components/content/TeenageEngineering";
 import CountryApp from "./components/content/CountryApp";
 import Footer from "./components/footer/Footer";
 
-function App() {
+const App = () => {
   const dropdownContext = useContext(DropdownContext);
 
   return (
@@ -48,6 +48,6 @@ function App() {
       </Router>
     </CountryProvider>
   );
-}
+};
 
 export default App;
