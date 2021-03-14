@@ -295,6 +295,7 @@ button {
 .alert {
   margin: auto;
   color: #fff;
+  margin-top: 10px;
 }
 
 footer {

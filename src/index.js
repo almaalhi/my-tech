@@ -1,14 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import DropdownState from './context/dropdown/DropdownState';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import DropdownProvider from "./context/dropdown/DropdownProvider";
 
 ReactDOM.render(
   <React.StrictMode>
-    <DropdownState>
+    <DropdownProvider>
       <App />
-    </DropdownState>
+    </DropdownProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );

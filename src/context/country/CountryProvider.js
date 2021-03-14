@@ -12,7 +12,7 @@ import {
   CLEAR_ERROR,
 } from "../types";
 
-const CountryState = (props) => {
+const CountryProvider = (props) => {
   const initialState = {
     countries: [],
     country: [],
@@ -103,4 +103,4 @@ const CountryState = (props) => {
   );
 };
 
-export default CountryState;
+export default CountryProvider;

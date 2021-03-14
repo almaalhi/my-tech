@@ -45,6 +45,8 @@ const countryReducer = (state, action) => {
         error: true,
         errorMessage: action.payload,
         loading: false,
+        countries: [],
+        country: [],
       };
     case CLEAR_ERROR:
       return {

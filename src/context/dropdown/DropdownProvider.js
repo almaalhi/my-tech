@@ -1,9 +1,9 @@
-import { useReducer } from 'react';
-import DropdownContext from './dropdownContext';
-import DropdownReducer from './dropdownReducer';
-import { TOGGLE_OPEN, CLOSE_OPEN } from '../types';
+import { useReducer } from "react";
+import DropdownContext from "./dropdownContext";
+import DropdownReducer from "./dropdownReducer";
+import { TOGGLE_OPEN, CLOSE_OPEN } from "../types";
 
-const DropdownState = (props) => {
+const DropdownProvider = (props) => {
   const initialState = {
     open: false,
   };
@@ -35,4 +35,4 @@ const DropdownState = (props) => {
   );
 };
 
-export default DropdownState;
+export default DropdownProvider;

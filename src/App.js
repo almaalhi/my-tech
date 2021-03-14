@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import DropdownContext from "./context/dropdown/dropdownContext";
-import CountryState from "./context/country/CountryState";
+import CountryProvider from "./context/country/CountryProvider";
 import { HiOutlineHome, HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/navigation/Navbar";
@@ -18,7 +18,7 @@ function App() {
   const dropdownContext = useContext(DropdownContext);
 
   return (
-    <CountryState>
+    <CountryProvider>
       <Router>
         <Navbar>
           <NavItem icon={<HiOutlineHome />} linkName="/" />
@@ -46,7 +46,7 @@ function App() {
         </Switch>
         <Footer />
       </Router>
-    </CountryState>
+    </CountryProvider>
   );
 }
 
