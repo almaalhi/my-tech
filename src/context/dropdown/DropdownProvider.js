@@ -1,7 +1,7 @@
 import { useReducer } from "react";
 import DropdownContext from "./dropdownContext";
 import DropdownReducer from "./dropdownReducer";
-import { TOGGLE_OPEN, CLOSE_OPEN } from "../types";
+import { TOGGLE, CLOSE_DROPDOWN } from "../types";
 
 const DropdownProvider = (props) => {
   const initialState = {
@@ -11,23 +11,23 @@ const DropdownProvider = (props) => {
   const [state, dispatch] = useReducer(DropdownReducer, initialState);
 
   // Toggle Dropdown
-  const toggleOpen = () =>
+  const toggle = () =>
     dispatch({
-      type: TOGGLE_OPEN,
+      type: TOGGLE,
     });
 
   // Close Dropdown
-  const closeOpen = () =>
+  const closeDropdown = () =>
     dispatch({
-      type: CLOSE_OPEN,
+      type: CLOSE_DROPDOWN,
     });
 
   return (
     <DropdownContext.Provider
       value={{
         open: state.open,
-        toggleOpen,
-        closeOpen,
+        toggle,
+        closeDropdown,
       }}
     >
       {props.children}

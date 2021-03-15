@@ -1,5 +1,5 @@
-export const TOGGLE_OPEN = "TOGGLE_OPEN";
-export const CLOSE_OPEN = "CLOSE_OPEN";
+export const TOGGLE = "TOGGLE";
+export const CLOSE_DROPDOWN = "CLOSE_DROPDOWN";
 export const GET_COUNTRIES = "GET_COUNTRIES";
 export const CLEAR_COUNTRIES = "CLEAR_COUNTRIES";
 export const SET_COUNTRY = "SET_COUNTRY";

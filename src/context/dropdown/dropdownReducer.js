@@ -1,13 +1,13 @@
-import { TOGGLE_OPEN, CLOSE_OPEN } from "../types";
+import { TOGGLE, CLOSE_DROPDOWN } from "../types";
 
 const dropdownReducer = (state, action) => {
   switch (action.type) {
-    case TOGGLE_OPEN:
+    case TOGGLE:
       return {
         ...state,
         open: !state.open,
       };
-    case CLOSE_OPEN:
+    case CLOSE_DROPDOWN:
       return {
         ...state,
         open: false,
