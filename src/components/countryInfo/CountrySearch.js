@@ -43,7 +43,7 @@ const CountrySearch = () => {
             Clear
           </button>
         )}
-        {error && <h3 className="alert">{errorMessage}</h3>}
+        {error && <p className="alert">{errorMessage}</p>}
       </form>
     </div>
   );
