@@ -15,14 +15,10 @@ const CountryResult = () => {
 
   return loading ? (
     <div className="loader"></div>
+  ) : countries.length > 0 && country.length === 0 ? (
+    <div className="country-list">{countryList}</div>
   ) : (
-    <div className="search country-list">
-      {countries.length > 0 && country.length === 0 ? (
-        countryList
-      ) : country.length !== 0 ? (
-        <Country />
-      ) : null}
-    </div>
+    country.length !== 0 && <Country />
   );
 };
 
