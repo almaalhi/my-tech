@@ -9,8 +9,10 @@
 **Onewheel Pint** </br>
 Blog of my experience with the Onewheel Pint self balancing board.
 </br>
+</br>
 **Brompton** </br>
 Blog about my foldable bike.
+</br>
 </br>
 **Country Information App** </br>
 A page that allows the user to search for a country and retrieve basic information such as the capital, population, flag, etc.
