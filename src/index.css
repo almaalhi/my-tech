@@ -110,6 +110,7 @@ a {
 }
 
 .main-content-div {
+  margin-top: 2.5rem;
   min-height: 100vh;
 }
 
@@ -284,7 +285,7 @@ button {
 }
 
 .country-item h3 {
-  font-size: 22px;
+  font-size: 26px;
 }
 
 .country-item li {
@@ -319,7 +320,7 @@ footer {
   color: var(--text-color);
   background-color: var(--bg);
   height: 30px;
-  /* margin-top: 1.5rem; */
+  margin-top: 15px;
 }
 
 /*  spinner  */

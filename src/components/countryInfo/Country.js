@@ -15,9 +15,9 @@ const Country = () => {
       <h3>{country.name}</h3>
       <img src={country.flag} alt="flag" className="big-flag" />
       <ul className="country-ul">
-        <li>Capital: {country.capital}</li>
-        <li>Population: {popString}</li>
-        <li>Calling Code: +{country.callingCodes[0]}</li>
+        <li>CAPITAL: {country.capital}</li>
+        <li>POPULATION: {popString}</li>
+        <li>CALLING CODE: +{country.callingCodes[0]}</li>
         <Language languages={country.languages} />
         <Timezones timezones={country.timezones} />
       </ul>
