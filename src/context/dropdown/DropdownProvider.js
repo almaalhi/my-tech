@@ -1,7 +1,7 @@
-import { useReducer } from "react";
-import DropdownContext from "./dropdownContext";
-import DropdownReducer from "./dropdownReducer";
-import { TOGGLE, CLOSE_DROPDOWN } from "../types";
+import { useReducer } from 'react';
+import DropdownContext from './dropdownContext';
+import DropdownReducer from './dropdownReducer';
+import { TOGGLE, CLOSE_DROPDOWN } from '../types';
 
 const DropdownProvider = (props) => {
   const initialState = {

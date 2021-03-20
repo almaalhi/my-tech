@@ -1,7 +1,7 @@
-import { useReducer } from "react";
-import CountryContext from "./countryContext";
-import CountryReducer from "./countryReducer";
-import axios from "axios";
+import { useReducer } from 'react';
+import CountryContext from './countryContext';
+import CountryReducer from './countryReducer';
+import axios from 'axios';
 import {
   GET_COUNTRIES,
   CLEAR_COUNTRIES,
@@ -10,7 +10,7 @@ import {
   SET_LOADING,
   SET_ERROR,
   CLEAR_ERROR,
-} from "../types";
+} from '../types';
 
 const CountryProvider = (props) => {
   const initialState = {
@@ -36,7 +36,7 @@ const CountryProvider = (props) => {
       });
     } catch (err) {
       console.error(err.message);
-      setError("No country found, please try again");
+      setError('No country found, please try again');
     }
   };
 
@@ -58,7 +58,7 @@ const CountryProvider = (props) => {
       });
     } catch (err) {
       console.error(err.message);
-      setError("There was an error when trying to set the country");
+      setError('There was an error when trying to set the country');
     }
   };
 

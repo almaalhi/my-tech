@@ -1,15 +1,15 @@
-import pintPark from "../../pictures/pint/DSC_0277.png";
-import pintPackage from "../../pictures/pint/D72_2360.JPG";
-import pintAcc from "../../pictures/pint/D72_2400.JPG";
-import pintAccOpen from "../../pictures/pint/D72_2407.JPG";
-import pint1 from "../../pictures/pint/DSC_0364.png";
-import pint2 from "../../pictures/pint/DSC_0565.png";
-import pint3 from "../../pictures/pint/DSC_0576.png";
-import pint4 from "../../pictures/pint/DSC_0728.png";
+import pintPark from '../../pictures/pint/DSC_0277.png';
+import pintPackage from '../../pictures/pint/D72_2360.JPG';
+import pintAcc from '../../pictures/pint/D72_2400.JPG';
+import pintAccOpen from '../../pictures/pint/D72_2407.JPG';
+import pint1 from '../../pictures/pint/DSC_0364.png';
+import pint2 from '../../pictures/pint/DSC_0565.png';
+import pint3 from '../../pictures/pint/DSC_0576.png';
+import pint4 from '../../pictures/pint/DSC_0728.png';
 
 const Pint = () => {
   return (
-    <div className="content">
+    <div className='content'>
       <h1>My Pint</h1>
       <div>
         <p>
@@ -19,8 +19,8 @@ const Pint = () => {
           the board arrived at my doorstep.
         </p>
 
-        <div className="image-div">
-          <img className="image" src={pintPackage} alt="Pint Arrival"></img>
+        <div className='image-div'>
+          <img className='image' src={pintPackage} alt='Pint Arrival'></img>
         </div>
 
         <p>
@@ -46,14 +46,14 @@ const Pint = () => {
           Charger. This reduces charge time from 110 minutes to 50 minutes!
         </p>
 
-        <div className="image-div">
-          <img className="image" src={pintAcc} alt="Pint Accessories"></img>
+        <div className='image-div'>
+          <img className='image' src={pintAcc} alt='Pint Accessories'></img>
         </div>
-        <div className="image-div">
+        <div className='image-div'>
           <img
-            className="image"
+            className='image'
             src={pintAccOpen}
-            alt="Pint Accessories on the Floor"
+            alt='Pint Accessories on the Floor'
           ></img>
         </div>
 
@@ -64,7 +64,7 @@ const Pint = () => {
           First, I want to! It's so much fun to "carve" around on the streets
           and sidewalks. Yes, that word is borrowed from snowboarding but that's
           the best way to describe the sensation. Second, it lets me get some
-          fresh air since I spend the remainder of the day inside. It's{" "}
+          fresh air since I spend the remainder of the day inside. It's{' '}
           <del>2020</del> 2021 so with WFH still in place and with me trying to
           avoid unnecessary contact with people, I am likely to stay inside for
           days on end if it weren't for my Pint. Finally, the app. Future Motion
@@ -73,25 +73,25 @@ const Pint = () => {
           Daily streaks, riding a certain number of miles in one day, riding a
           certain number of miles without breaking your streak, and so on.
         </p>
-        <div className="image-div">
-          <img className="image" src={pintPark} alt="pint pic"></img>
+        <div className='image-div'>
+          <img className='image' src={pintPark} alt='pint pic'></img>
         </div>
 
         <p>
           Here are some more pictures from my daily rides. Hopefully you can
           enjoy them.
         </p>
-        <div className="image-div">
-          <img className="image" src={pint1} alt="pint pic"></img>
+        <div className='image-div'>
+          <img className='image' src={pint1} alt='pint pic'></img>
         </div>
-        <div className="image-div">
-          <img className="image" src={pint4} alt="pint pic"></img>
+        <div className='image-div'>
+          <img className='image' src={pint4} alt='pint pic'></img>
         </div>
-        <div className="image-div">
-          <img className="image" src={pint2} alt="pint pic"></img>
+        <div className='image-div'>
+          <img className='image' src={pint2} alt='pint pic'></img>
         </div>
-        <div className="image-div">
-          <img className="image" src={pint3} alt="pint pic"></img>
+        <div className='image-div'>
+          <img className='image' src={pint3} alt='pint pic'></img>
         </div>
       </div>
     </div>

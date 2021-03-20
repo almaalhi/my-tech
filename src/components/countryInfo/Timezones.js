@@ -4,11 +4,11 @@ const Timezones = (props) => {
   } else if (props.timezones.length > 1) {
     return (
       <li>
-        TIMEZONES:{" "}
+        TIMEZONES:{' '}
         <ul>
           {props.timezones.map((timezone, ind) => (
             <li key={ind}>{timezone} </li>
-          ))}{" "}
+          ))}{' '}
         </ul>
       </li>
     );

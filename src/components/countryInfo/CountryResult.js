@@ -1,8 +1,8 @@
-import { useContext } from "react";
-import countryContext from "../../context/country/countryContext";
+import { useContext } from 'react';
+import countryContext from '../../context/country/countryContext';
 
-import Country from "./Country";
-import Countries from "./Countries";
+import Country from './Country';
+import Countries from './Countries';
 
 const CountryResult = () => {
   const CountryContext = useContext(countryContext);
@@ -14,9 +14,9 @@ const CountryResult = () => {
   ));
 
   return loading ? (
-    <div className="loader"></div>
+    <div className='loader'></div>
   ) : countries.length > 0 && country.length === 0 ? (
-    <div className="country-list">{countryList}</div>
+    <div className='country-list'>{countryList}</div>
   ) : (
     country.length !== 0 && <Country />
   );

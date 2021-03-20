@@ -6,7 +6,7 @@ import {
   SET_LOADING,
   SET_ERROR,
   CLEAR_ERROR,
-} from "../types";
+} from '../types';
 
 const countryReducer = (state, action) => {
   switch (action.type) {

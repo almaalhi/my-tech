@@ -1,9 +1,9 @@
-import pic1 from "../../pictures/brompton/brompton1.jpeg";
-import pic2 from "../../pictures/brompton/brompton2.jpeg";
+import pic1 from '../../pictures/brompton/brompton1.jpeg';
+import pic2 from '../../pictures/brompton/brompton2.jpeg';
 
 const Brompton = (props) => {
   return (
-    <div className="content">
+    <div className='content'>
       <h1>My Brompton</h1>
       <div>
         <p>
@@ -21,9 +21,9 @@ const Brompton = (props) => {
           smallest footprints among folding bikes. It didn't take much
           convincing for me to fall in love with the concept.
         </p>
-        <div className="imageDiv">
-          <img className="image" src={pic1} alt="brompton1"></img>
-          <p className="imageDesc"></p>
+        <div className='imageDiv'>
+          <img className='image' src={pic1} alt='brompton1'></img>
+          <p className='imageDesc'></p>
         </div>
         <p>
           Things have changed quite a bit since March of 2020, but the idea of
@@ -42,9 +42,9 @@ const Brompton = (props) => {
           but having a bike to ride around on is a great way to get a feel for a
           place.
         </p>
-        <div className="imageDiv">
-          <img className="image" src={pic2} alt="brompton2"></img>
-          <p className="imageDesc"></p>
+        <div className='imageDiv'>
+          <img className='image' src={pic2} alt='brompton2'></img>
+          <p className='imageDesc'></p>
         </div>
       </div>
     </div>

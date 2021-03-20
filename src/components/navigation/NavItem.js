@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
-import { useContext } from "react";
-import DropdownContext from "../../context/dropdown/dropdownContext";
-import CountryContext from "../../context/country/countryContext";
+import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import DropdownContext from '../../context/dropdown/dropdownContext';
+import CountryContext from '../../context/country/countryContext';
 
 function NavItem(props) {
   const dropdownContext = useContext(DropdownContext);
@@ -20,10 +20,10 @@ function NavItem(props) {
   };
 
   return (
-    <li className="nav-item">
+    <li className='nav-item'>
       <Link
         to={props.linkName}
-        className="icon-button"
+        className='icon-button'
         onClick={props.children ? clickDropdownItem : clickHome}
       >
         {props.icon}

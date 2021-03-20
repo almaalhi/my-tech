@@ -1,9 +1,9 @@
-import { useState, useContext } from "react";
-import countryContext from "../../context/country/countryContext";
+import { useState, useContext } from 'react';
+import countryContext from '../../context/country/countryContext';
 
 const CountrySearch = () => {
   const CountryContext = useContext(countryContext);
-  const [text, setText] = useState("");
+  const [text, setText] = useState('');
 
   const {
     getCountries,
@@ -16,34 +16,34 @@ const CountrySearch = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    if (text === "") {
-      setError("Please enter some text and try again");
+    if (text === '') {
+      setError('Please enter some text and try again');
     } else {
       getCountries(text);
-      setText("");
+      setText('');
     }
   };
 
   const onChange = (e) => setText(e.target.value);
 
   return (
-    <div className="search">
+    <div className='search'>
       <form onSubmit={onSubmit}>
         <input
-          type="text"
-          name="text"
-          placeholder="Enter Country Name"
+          type='text'
+          name='text'
+          placeholder='Enter Country Name'
           value={text}
           onChange={onChange}
         />
-        <input type="submit" value="Search" className="btn btn-dark" />
+        <input type='submit' value='Search' className='btn btn-dark' />
 
         {countries.length > 0 && (
-          <button onClick={clearCountries} className="btn btn-light">
+          <button onClick={clearCountries} className='btn btn-light'>
             Clear
           </button>
         )}
-        {error && <p className="alert">{errorMessage}</p>}
+        {error && <p className='alert'>{errorMessage}</p>}
       </form>
     </div>
   );
