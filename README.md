@@ -1,18 +1,23 @@
-# React Coding Project
+# My React Coding Project
 
-### `Live version of code is available at:`
+## Live code available at
 
 [alvarado.tech](https://alvarado.tech/)
 
-### `Current Live Pages:`
+## Live Pages
 
-**Onewheel Pint** </br>
+**Onewheel Pint**  
 Blog of my experience with the Onewheel Pint self balancing board.
-</br>
-</br>
-**Brompton** </br>
+
+**Brompton**  
 Blog about my foldable bike.
-</br>
-</br>
-**Country Information App** </br>
-A page that allows the user to search for a country and retrieve basic information such as the capital, population, flag, etc.
+
+**Country Information App**  
+Retrieve basic country information such as population, languages, etc.
+
+## To-do List
+
+- [x] Onewheel Pint info page
+- [x] Brompton info page
+- [ ] OP-Z info page
+- [x] Country information app
