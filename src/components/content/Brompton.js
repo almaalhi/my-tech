@@ -1,7 +1,7 @@
 import pic1 from '../../pictures/brompton/brompton1.jpeg';
 import pic2 from '../../pictures/brompton/brompton2.jpeg';
 
-const Brompton = (props) => {
+const Brompton = () => {
   return (
     <div className='content'>
       <h1>My Brompton</h1>

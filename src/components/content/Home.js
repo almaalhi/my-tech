@@ -14,7 +14,7 @@ const getRandomInt = (max) => {
 
 const randomPic = getRandomInt(3);
 
-const Home = (props) => {
+const Home = () => {
   return (
     <div className='content'>
       <h1>Welcome!</h1>

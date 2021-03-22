@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import CountrySearch from '../countryInfo/CountrySearch';
 import CountryResult from '../countryInfo/CountryResult';
 
-const CountryApp = (props) => {
+const CountryApp = () => {
   return (
     <Fragment>
       <CountrySearch />
