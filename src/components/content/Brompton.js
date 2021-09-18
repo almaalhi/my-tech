@@ -1,3 +1,4 @@
+import Picture from './Picture';
 import pic1 from '../../pictures/brompton/brompton1.jpeg';
 import pic2 from '../../pictures/brompton/brompton2.jpeg';
 
@@ -21,10 +22,7 @@ const Brompton = () => {
           smallest footprints among folding bikes. It didn't take much
           convincing for me to fall in love with the concept.
         </p>
-        <div className='imageDiv'>
-          <img className='image' src={pic1} alt='brompton1'></img>
-          <p className='imageDesc'></p>
-        </div>
+        <Picture src={pic1} alt='brompton1' />
         <p>
           Things have changed quite a bit since March of 2020, but the idea of
           riding around and just folding our bikes up when we got to a
@@ -42,10 +40,7 @@ const Brompton = () => {
           but having a bike to ride around on is a great way to get a feel for a
           place.
         </p>
-        <div className='imageDiv'>
-          <img className='image' src={pic2} alt='brompton2'></img>
-          <p className='imageDesc'></p>
-        </div>
+        <Picture src={pic2} alt='brompton2' />
       </div>
     </div>
   );

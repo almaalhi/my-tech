@@ -1,3 +1,6 @@
+import Picture from './Picture';
+import opz1 from '../../pictures/op-z/DSC_1799.JPG';
+
 const TeenageEngineering = () => {
   return (
     <div className='content'>
@@ -37,10 +40,7 @@ const TeenageEngineering = () => {
           to name a few).
         </p>
       </div>
-      <div className='imageDiv'>
-        {/* <img></img> */}
-        <p className='imageDesc'></p>
-      </div>
+      <Picture src={opz1} alt='OP-Z Picture' />
     </div>
   );
 };
