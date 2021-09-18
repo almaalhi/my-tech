@@ -13,17 +13,18 @@ const TeenageEngineering = () => {
           synthesizer. Hence, the OP-Z.
         </p>
         <p>
-          The interace on this thing at first may seem overwhelming and watching
-          somebody use it can make it appear like some sort of magical device.
-          In reality, it's very well thought out and once you get the hang of
-          it, it's amazing.
+          The interface on this thing at first may seem overwhelming and
+          watching somebody use it can make it appear like some sort of magical
+          device. In reality, it's very well thought out and once you get the
+          hang of it, it's amazing.
         </p>
         <p>
           I won't go into too much detail on how to use it (There are too many
           great guides out there that do a better job than I ever could), but I
           will try to explain a little more about it. In short, it's a 8 track
-          16 step programmable synthesizer. The tracks are preset, but you can
-          change them if you'd like. I've never had the need.
+          16 step programmable synthesizer. The tracks types are preset, but you
+          can alter the sound engines that come included or that you've
+          downloaded.
         </p>
         <p>
           Still not clear? Well, as an example track one is kick. You could have
@@ -38,6 +39,10 @@ const TeenageEngineering = () => {
           kick-rest-rest-rest. We can build up a song like this by slowly
           filling in each track (Other tracks include lead, chords, and hi-hats
           to name a few).
+        </p>
+        <p>
+          You can add these sounds a variety of ways including live recording
+          and their timing can be adjusted afterward.
         </p>
       </div>
       <Picture src={opz1} alt='OP-Z Picture' />
