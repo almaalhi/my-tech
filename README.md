@@ -7,17 +7,21 @@
 ## Live Pages
 
 **Onewheel Pint**  
-Blog of my experience with the Onewheel Pint self balancing board.
+Blog of my experience with the Onewheel Pint self balancing board
 
 **Brompton**  
-Blog about my foldable bike.
+Blog about my foldable bike
+
+**OP-Z info page**  
+Basic info about my portable synth
 
 **Country Information App**  
-Retrieve basic country information such as population, languages, etc.
+Interface that can be used to retrieve
+basic country information using API calls
 
 ## To-do List
 
 - [x] Onewheel Pint info page
 - [x] Brompton info page
-- [ ] OP-Z info page
+- [x] OP-Z info page
 - [x] Country information app
