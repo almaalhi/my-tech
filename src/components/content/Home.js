@@ -23,13 +23,13 @@ const Home = () => {
         <p>
           Hello, my name is Alex and I'm on my way to becoming a software
           developer. This website is something that I'm building to put the
-          concepts that I've learned to use.{' '}
+          concepts that I'm learning to use.{' '}
         </p>
         <p>
-          This website was built with React and React Router is used to route
+          This website was built with React. React Router is used to route
           components. State management is being handled with React's built in
-          useReducer and is being supplemented with useContext for easy passing
-          of state. API calls are being handled with Axios.
+          useReducer and useContext hooks. API calls are being handled with
+          Axios.
         </p>
       </div>
       <Picture src={pictures[randomPic].picture} alt='Home Pic' />
