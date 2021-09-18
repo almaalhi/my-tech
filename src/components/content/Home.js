@@ -1,3 +1,4 @@
+import Picture from '../UI/Picture';
 import homePic from '../../pictures/home/D72_9057.png';
 import castle from '../../pictures/home/D72_5693.png';
 import chichibu from '../../pictures/home/D72_2436.png';
@@ -31,14 +32,8 @@ const Home = () => {
           of state. API calls are being handled with Axios.
         </p>
       </div>
-      <div className='image-div'>
-        <img
-          className='image'
-          src={pictures[randomPic].picture}
-          alt='Home Pic'
-        ></img>
-        <p className='image-desc'>{pictures[randomPic].text}</p>
-      </div>
+      <Picture src={pictures[randomPic].picture} alt='Home Pic' />
+      <p className='image-desc'>{pictures[randomPic].text}</p>
     </div>
   );
 };

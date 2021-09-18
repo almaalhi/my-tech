@@ -1,4 +1,4 @@
-import Picture from './Picture';
+import Picture from '../UI/Picture';
 import pic1 from '../../pictures/brompton/brompton1.jpeg';
 import pic2 from '../../pictures/brompton/brompton2.jpeg';
 

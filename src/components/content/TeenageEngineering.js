@@ -1,4 +1,4 @@
-import Picture from './Picture';
+import Picture from '../UI/Picture';
 import opz1 from '../../pictures/op-z/DSC_1799.JPG';
 
 const TeenageEngineering = () => {

@@ -1,4 +1,4 @@
-import Picture from './Picture';
+import Picture from '../UI/Picture';
 import pintPark from '../../pictures/pint/DSC_0277.png';
 import pintPackage from '../../pictures/pint/D72_2360.JPG';
 import pintAcc from '../../pictures/pint/D72_2400.JPG';
