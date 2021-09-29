@@ -27,13 +27,14 @@ const CountryProvider = (props) => {
   const getCountries = async (text) => {
     try {
       setLoading();
-      const res = await axios.get(
-        `https://restcountries.eu/rest/v2/name/${text}`
-      );
-      dispatch({
-        type: GET_COUNTRIES,
-        payload: res.data,
-      });
+      const res = await axios.get(`https://restcountries.com/v3/name/${text}`);
+
+      if (res.status === 200) {
+        dispatch({
+          type: GET_COUNTRIES,
+          payload: res.data,
+        });
+      }
     } catch (err) {
       console.error(err.message);
       setError('No country found, please try again');
@@ -49,12 +50,10 @@ const CountryProvider = (props) => {
   const setCountry = async (text) => {
     try {
       setLoading();
-      const res = await axios.get(
-        `https://restcountries.eu/rest/v2/alpha/${text}`
-      );
+      const res = await axios.get(`https://restcountries.com/v3/alpha/${text}`);
       dispatch({
         type: SET_COUNTRY,
-        payload: res.data,
+        payload: res.data[0],
       });
     } catch (err) {
       console.error(err.message);
