@@ -10,10 +10,11 @@ const Country = () => {
 
   return (
     <div className='country-item'>
-      <h3>{console.log(country)}</h3>
+      <h3>{country.name.common}</h3>
       <img src={country.flags[0]} alt='flag' className='big-flag' />
       <ul className='country-ul'>
         <li>CAPITAL: {country.capital}</li>
+        <li>REGION: {country.region}</li>
         <li className='language-block'>
           LANGUAGES: <Language languages={country.languages} />
         </li>
