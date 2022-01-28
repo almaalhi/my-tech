@@ -1,5 +1,5 @@
-function DropdownMenu(props) {
-  return <div className='dropdown'>{props.children}</div>;
+function DropdownMenu({ children }) {
+  return <div className='dropdown'>{children}</div>;
 }
 
 export default DropdownMenu;
