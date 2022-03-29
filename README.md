@@ -30,4 +30,4 @@ basic country information using API calls
 
 This page was initially made with very little planning. I just wanted a place to share code. Now that some time has passed, I think I'd like to completely refresh this page with just a short 'About me' section and then links to more full projects.
 
-As of now, I don't know when I'll start the refresh but the seed has been planted. Writing it down somewhere (Here) also will serve as a modivator.
+As of now, I don't know when I'll start the refresh but the seed has been planted. Writing it down somewhere (Here) also will serve as a motivator.
