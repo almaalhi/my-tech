@@ -43,8 +43,5 @@
   "prettier": {
     "singleQuote": true,
     "jsxSingleQuote": true
-  },
-  "devDependencies": {
-    "prettier": "^2.7.1"
   }
 }
